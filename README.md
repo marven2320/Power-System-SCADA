@@ -19,8 +19,20 @@ A design and implementation of a miniaturized Power System SCADA integrated in a
 
 ###Basic git routine
 ```
-1. git clone "Repo URL" folderName      ``Perform this command when you dont have the current repository you wish to contribute.
-2. git pull ``Pull the current master branch in the repository.
-3. git checkout -b branchName ``checkout the master branch then switches to your newly created branch "branchName".
-4. 
+1. git clone "Repo URL" folderName 
+---Perform this command when you dont have the current repository you wish to contribute.
+2. git pull
+---Pull the current master branch in the repository.
+3. git checkout -b branchName
+---checkout the master branch then switches to your newly created branch "branchName".
+4. git add -u
+--- add some files you add in the current folder/repository
+5. git commit -a -m "Your commit description here"
+---commit your work in the current branch
+6. git checkout master
+---Switch to master branch
+7. git merge branchName
+---Merging your recent work to master branch
+8. git push origin
+---Push your work to the master branch
 ```
