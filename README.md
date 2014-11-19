@@ -16,3 +16,9 @@ A design and implementation of a miniaturized Power System SCADA integrated in a
 7. Make sure to check if the 'master' branch works before you push your code to 'origin'. We'll define testing methods later for everyone to do before pushing to origin. The point is not to break the master line of code.
 8. If you break 'master', make sure to FIX it before Push.
 9. Push all branches to 'origin'.
+
+###Basic git routine
+1. git clone "Repo URL" folderName     //Perform this command when you dont have the current repository you wish to contribute.
+2. git pull //Pull the current master branch in the repository.
+3. git checkout -b branchName //checkout the master branch then switches to your newly created branch "branchName".
+4. 
