@@ -18,7 +18,7 @@ A design and implementation of a miniaturized Power System SCADA integrated in a
 9. Push all branches to 'origin'.
 
 ###Basic git routine
-1. git clone "Repo URL" folderName     //Perform this command when you dont have the current repository you wish to contribute.
-2. git pull //Pull the current master branch in the repository.
-3. git checkout -b branchName //checkout the master branch then switches to your newly created branch "branchName".
+1. git clone "Repo URL" folderName      /tPerform this command when you dont have the current repository you wish to contribute.
+2. git pull \tPull the current master branch in the repository.
+3. git checkout -b branchName \tcheckout the master branch then switches to your newly created branch "branchName".
 4. 
