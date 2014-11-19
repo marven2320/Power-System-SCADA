@@ -7,7 +7,7 @@ A design and implementation of a miniaturized Power System SCADA integrated in a
 Repo Merging/Pulling Rules
 --------------------
 
-1. Before doing any work. Make sure you pull the latest version of master branch.
+1. Before doing any work. Make sure you pull the latest version of <i>master</i> branch.
 2. Create your own branch.
 3. Make your modifications in your own branch.
 4. Make sure that your work is not too behind in the master branch! Otherwise, you will have problems in merging your work.
