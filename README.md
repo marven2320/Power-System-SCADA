@@ -25,7 +25,7 @@ A design and implementation of a miniaturized Power System SCADA integrated in a
 ---Pull the current master branch in the repository.
 3. git checkout -b branchName
 ---checkout the master branch then switches to your newly created branch "branchName".
-4. git add -u
+4. git add .
 --- add some files you add in the current folder/repository
 5. git commit -a -m "Your commit description here"
 ---commit your work in the current branch
