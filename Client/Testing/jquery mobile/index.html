@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="paGe">
+
+	    <div data-role="header" id="heaDer">
+	    	<h1>SCADA App - Login Page</h1>
+	  	</div>
+	  	<div data-role="content" class="ui-content">
+	  		<form>
+				  	<div id="LoginForm"> 
+					    <h2>Welcome. Please enter your credentials to login.</h2>
+					 </div>
+
+					  	<div data-role="field-contain" id="userNameID">
+					  		<input type="text" id="username" name="username" placeholder="Username"/>
+					  	</div> <!--End username div-->
+
+					  	<div data-role="field-contain" id="passWordID">
+					  		<input type="password" id="password" name="password" placeholder="Password"/>
+					  	</div> <!--End password div-->
+
+					  	<div data-role="field-contain" id="loginButton">
+					  		<button type="submit" name="login" data-inline="true">Login</button>
+					  	</div> <!--End Login div-->
+				  </div>
+				  		<div data-role="footer" id="fooTer">
+							<h1>Copyright &copy; The Special Topics Company</h1>
+						</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
