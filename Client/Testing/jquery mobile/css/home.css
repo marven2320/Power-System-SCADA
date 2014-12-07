@@ -1,9 +1,8 @@
 body{
 		font-family:times,sans-serif;
 		margin:0px;
-		background-color:steelblue;
+		background-color:lightblue;
 		width: 100%;
-
 }
 
 
@@ -13,8 +12,8 @@ body{
 		height:500px;
 		margin:0px auto;
 		border:1px solid #333;
-		background-color: lightblue;
-
+		background-color: white;
+		text-align: center;
 }
 
 #header{
@@ -23,8 +22,7 @@ body{
 		height:40px;
 		background-color:rgb(30, 106, 173);
 		box-shadow: 0px 4px 2px #333;
-		margin-right: 0px;
-		margin-left: 0px;
+		margin: 0px;
 }
 #header>h1{
 
@@ -54,7 +52,14 @@ body{
 
  	background-color:rgba(0,0,255,0.3);
  	width: 50%;
- 	font-family: "Andalus";
+ 	font-family: "Andalus", times, serif;
  	font-weight: bold;
- 	font-size: 20px;
+ 	font-size: 1.5em;
+ 	letter-spacing: 3px;
+ 	border: 1px solid black;
+ }
+
+ ul.busnum,ul.system{
+
+ 	list-style-type: none;
  }
