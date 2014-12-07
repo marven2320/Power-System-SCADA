@@ -1,18 +1,19 @@
 body{
 		font-family:times,sans-serif;
 		margin:0px;
-		background-color:lightblue;
+		background-color:steelblue;
+		width: 100%;
 
 }
 
 
 
 #form{
-		width:1024px;
+		width:60%;
 		height:500px;
 		margin:0px auto;
 		border:1px solid #333;
-		background-color: steelblue;
+		background-color: lightblue;
 
 }
 
@@ -22,7 +23,8 @@ body{
 		height:40px;
 		background-color:rgb(30, 106, 173);
 		box-shadow: 0px 4px 2px #333;
-		
+		margin-right: 0px;
+		margin-left: 0px;
 }
 #header>h1{
 
@@ -48,3 +50,11 @@ body{
 		color:white;
 
 }
+ #bus, #faults, #data {
+
+ 	background-color:rgba(0,0,255,0.3);
+ 	width: 50%;
+ 	font-family: "Andalus";
+ 	font-weight: bold;
+ 	font-size: 20px;
+ }
