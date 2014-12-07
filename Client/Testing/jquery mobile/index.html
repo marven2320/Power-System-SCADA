@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang = "eng">
 <head>
+	<title>SCADA-App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src ="js files/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src ="js files/jquery.mobile-1.4.5.js"></script>
 	<script type="text/javascript" src="js files/login.js"></script>
 </head>
 <body>
-	<div data-role="page" id="paGe">
-
-	    <div data-role="header" id="heaDer">
+	    <div data-role="header" id="header">
 	    	<h1>SCADA App - Login Page</h1>
 	  	</div>
-	  	<div data-role="content" class="ui-content">
-	  		<form>
-				  	<div id="LoginForm"> 
-					    <h2>Welcome. Please enter your credentials to login.</h2>
-					 </div>
-
+	  		<form id="form"><br><br><br>
+				  	<div id="wrapper"> 
+					    <p id="welcome">Please enter your credentials to login.</p>
+					
+						<div>
+							<label style="font-size:12px">Email/Username:</label>
+						</div>
 					  	<div data-role="field-contain" id="userNameID">
-					  		<input type="text" id="username" name="username" placeholder="Username"/>
-					  	</div> <!--End username div-->
-
+					  		<input type="text" id="username" name="username"  class="userID"/>
+					  	</div><!--End username div-->
+					  	<div>
+							<label style="font-size:12px">Password:</label>
+						</div>
 					  	<div data-role="field-contain" id="passWordID">
-					  		<input type="password" id="password" name="password" placeholder="Password"/>
-					  	</div> <!--End password div-->
+					  		<input type="password" id="password"  class="userID" name="password"/>
+					  	</div><br><!--End password div-->
 
 					  	<div data-role="field-contain" id="loginButton">
 					  		<button type="submit" name="login" data-inline="true">Login</button>
 					  	</div> <!--End Login div-->
 				  </div>
 			</form>
-		<div data-role="footer" id="fooTer">
-			<h1>Copyright &copy; The Special Topics Company</h1>
+
+		<div data-role="footer" id="footer">
+			<h2>Copyright &copy; The Special Topics Company</h2>
 		</div>
-		</div>
-	</div>
 </body>
 </html>
