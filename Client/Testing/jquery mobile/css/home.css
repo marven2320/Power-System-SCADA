@@ -2,27 +2,28 @@ body{
 		font-family:times,sans-serif;
 		margin:0px;
 		background-color:lightblue;
-
+		width: 1024px;
 }
 
 
 
 #form{
-		width:1024px;
+		width:75%;
 		height:500px;
 		margin:0px auto;
 		border:1px solid #333;
-		background-color: steelblue;
+		background-color: white;
+		text-align: center;
 
 }
 
 #header{
 
-		width:100%;
+		width:1024px;
 		height:40px;
 		background-color:rgb(30, 106, 173);
 		box-shadow: 0px 4px 2px #333;
-		
+		margin: 0px;
 }
 #header>h1{
 
@@ -30,13 +31,14 @@ body{
 		width:1024px;
 		margin:0px auto;
 		color:white;
+		text-shadow: 4px 2px 4px #00004C;
 }
 
 #footer{
 
-		width:100%;
+		width:1024px;
 		background-color:rgb(30, 106, 173);
-		box-shadow: 0px 4px 2px #333;
+		box-shadow: 4px 4px 2px #000;
 		position: absolute;
 }
 
@@ -47,4 +49,31 @@ body{
 		margin:0px auto;
 		color:white;
 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited {
+    float: left;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    width: 101px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+    box-shadow: 0px 4px 2px #333;
+}
+
+a.about{
+
+	width: 106px;
 }
