@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iMonitor</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src ="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src ="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <script type="text/javascript" src="js/real_time_volt_amp.js"></script>
+    <script type="text/javascript" src="js/real_time_gauge.js"></script>
+    <script type="text/javascript" src="js/real_time_line.js"></script>
+
+</head>
+<body>
+<script src="highchart/js/highcharts.js"></script>
+<script src="highchart/js/modules/exporting.js"></script>
+<script src="highchart/js/highcharts-more.js"></script>
+<script src="highchart/js/modules/solid-gauge.js"></script>
+
+
+<div data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h2>iMonitor</h2>
+        <a href="#left-panel" data-icon="bars" data-role="button" data-iconpos="notext" data-iconshadow="false">Menu</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="ui-grid-solo ui-responsive">
+            <div class="ui-block-a">
+                <div class="jqm-block-content ui-responsive">
+                    <h3>Energy Monitor</h3>
+                    <div id="timeline" ></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-grid-solo ui-responsive">
+            <div class="ui-block-a">
+                <div class="jqm-block-content ui-responsive" >
+                    <h3>Now Monitoring</h3>
+                    <div style="width: 1000px; height: 400px; margin: 0 auto">
+                        <div id="container-volt" style="width: 500px; height: 350px; float: left"></div>
+	                    <div id="container-amp" style="width: 500px; height: 350px; float: left"></div>
+                    </div>
+
+                    <div id="ctrlgrp">
+                        <form>
+                            <fieldset data-role="controlgroup" data-type="horizontal">
+                                <legend></legend>
+                                <input type="radio" name="radio-choice-h-2" id="radio2a" value="on" checked="checked">
+                                <label for="radio2a">Line 1</label>
+                                <input type="radio" name="radio-choice-h-2" id="radio2b" value="off">
+                                <label for="radio2b">Line 2</label>
+                                <input type="radio" name="radio-choice-h-2" id="radio2c" value="other">
+                                <label for="radio2c">Line 3</label>
+                                <input type="radio" name="radio-choice-h-2" id="radio2d" value="other">
+                                <label for="radio2d">Line 4</label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+            </div></div>
+            <div class = "ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <div class="jqm-block-content">
+                        <h3>What's On</h3>
+                        <div id="gaugechart"></div>
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="jqm-block-content">
+                        <h3>Security Status</h3>
+                    </div>
+                </div>
+            </div>
+    </div><!-- /content -->
+
+    <div data-role="panel" data-position="left" data-display="overlay" id="left-panel" data-theme="c" class="jqm-navmenu-panel">
+        <ul data-theme="d" data-role="listview" class="jqm-list ui-alt-icon ui-nodisc-icon">
+            <li data-icon="home"><a href="./index.html" data-ajax="false">Dashboard</a></li>
+            <li data-icon="search"><a href="#" data-rel="close">Energy Monitor</a></li>
+            <li data-icon="power"><a href="./powercon.html" data-ajax="false">Power Control</a></li>
+            <li data-icon="lock"><a href="#" data-rel="close">Security</a></li>
+        </ul>
+    </div>
+
+</div><!-- /page -->
+<div id="chart1"></div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iMonitor</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src ="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src ="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <script type="text/javascript" src="js/clickevent.js"></script>
+    <script type="text/javascript" src="js/monthly_pie.js"></script>
+
+</head>
+<body>
+<script src="highchart/js/highcharts.js"></script>
+<script src="highchart/js/modules/exporting.js"></script>
+<div data-role="page" id="testpage">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h2>iMonitor</h2>
+        <a href="#left-panel" data-icon="bars" data-role="button" data-iconpos="notext" data-iconshadow="false">Menu</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="ui-grid-a ui-responsive">
+            <div class="ui-block-a">
+                <div class="jqm-block-content ui-responsive">
+                    <h3>Power Controls</h3>
+                    <div data-role="header">
+                        <h1>Main Line 1</h1>
+                        <button class="ui-btn main1 ui-btn-right ui-theme-b">Off</button>
+                    </div>
+                    <div data-role="header">
+                        <h1>Line 1</h1>
+                        <button class="ui-btn toggle ui-btn-right ui-theme-b line-1 ui-disabled">On</button>
+                    </div>
+                    <div data-role="header">
+                        <h1>Line 2</h1>
+                        <button class="ui-btn toggle ui-btn-right ui-theme-b line-1 ui-disabled">On</button>
+                    </div><br><br>
+                    <div data-role="header">
+                        <h1>Main Line 2</h1>
+                        <button class="ui-btn main2 ui-btn-right ui-theme-b">Off</button>
+                    </div>
+                    <div data-role="header">
+                        <h1>Line 3</h1>
+                        <button class="ui-btn toggle ui-btn-right ui-theme-b line-2 ui-disabled">On</button>
+                    </div>
+                    <div data-role="header">
+                        <h1>Line 4</h1>
+                        <button class="ui-btn toggle ui-btn-right ui-theme-b line-2 ui-disabled">On</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="jqm-block-content ui-responsive" >
+                    <h3>Security Status</h3>
+                    <div id="securityStat" data-position="center" align="center" style="font-size: large; font-weight: bold; color: #3eb249;"></div>
+                    <div id="alertStat"    data-position="center" align="center" style="font-size: large; font-weight: bold; color: #3eb249;"></div>
+                </div>
+
+            </div>
+            <div class="ui-block-a">
+                <div class="jqm-block-content ui-responsive" >
+                    <h3>Breakers</h3>
+                        <div data-role="header">
+                            <h1>Main Breaker 1</h1>
+                            <button class="ui-btn mainB1 ui-btn-right ui-theme-b">Off</button>
+                        </div>
+                        <div data-role="header">
+                            <h1>Breaker 1</h1>
+                            <button class="ui-btn breaker ui-btn-right ui-theme-b breaker-1 ui-disabled">On</button>
+                        </div>
+                        <div data-role="header">
+                            <h1>Breaker 2</h1>
+                            <button class="ui-btn breaker ui-btn-right ui-theme-b breaker-1 ui-disabled">On</button>
+                        </div><br><br>
+                        <div data-role="header">
+                            <h1>Main Breaker 2</h1>
+                            <button class="ui-btn mainB2 ui-btn-right ui-theme-b">Off</button>
+                        </div>
+                        <div data-role="header">
+                            <h1>Breaker 3</h1>
+                            <button class="ui-btn breaker ui-btn-right ui-theme-b breaker-2 ui-disabled">On</button>
+                        </div>
+                        <div data-role="header">
+                            <h1>Breaker 4</h1>
+                            <button class="ui-btn breaker ui-btn-right ui-theme-b breaker-2 ui-disabled">On</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div><!-- /content -->
+
+    <div data-role="panel" data-position="left" data-display="overlay" id="left-panel" data-theme="c" class="jqm-navmenu-panel">
+        <ul data-theme="d" data-role="listview" class="jqm-list ui-alt-icon ui-nodisc-icon">
+            <li data-icon="home"><a href="./index.html" data-ajax="false">Dashboard</a></li>
+            <li data-icon="search"><a href="./energymon.html" data-ajax="false">Energy Monitor</a></li>
+            <li data-icon="power"><a href="#" data-rel="close">Power Control</a></li>
+            <li data-icon="lock"><a href="#" data-rel="close">Security</a></li>
+        </ul>
+    </div>
+
+</div><!-- /page -->
+
+</body>
+</html>
