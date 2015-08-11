@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iMonitor</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src ="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src ="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <script type="text/javascript" src="js/clickevent.js"></script>
+    <script type="text/javascript" src="js/monthly_bar.js"></script>
+    <script type="text/javascript" src="js/monthly_pie.js"></script>
+    <script type="text/javascript" src="js/real_time_gauge.js"></script>
+    <script type="text/javascript" src="js/real_time_line.js"></script>
+
+</head>
+<body>
+<script src="highchart/js/highcharts.js"></script>
+<script src="highchart/js/modules/exporting.js"></script>
+<script src="highchart/js/highcharts-more.js"></script>
+<div id ="status"></div>
+<div data-role="page" id = "page">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h2>iMonitor</h2>
+        <a href="#left-panel" data-icon="bars" data-role="button" data-iconpos="notext" data-iconshadow="false">Menu</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="ui-grid-solo ui-responsive">
+            <div class="ui-block-a">
+                <div class="jqm-block-content ui-responsive">
+                    <h3>DashBoard</h3>
+                    <div  id="barchart" ></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-grid-a ui-responsive">
+            <div class="ui-block-a">
+                <div class="jqm-block-content">
+                    <h3>Energy used and its Cost</h3>
+                    <div id="generated" style="font-size:50px; font-weight: bold; color: #111111" align="center"></div>
+                    <div id="usage" style="font-size: 46px; font-weight: normal; color: #1d1d1d" align="center"></div>
+                    <div id="cost" style="font-size: 34px; font-weight: lighter; color: brown;" align="center" ></div>
+                    <div id="serial" style="font-size: 34px; font-weight: lighter; color: brown;" align="center" ></div>
+                    <div id="ctrlgrp2">
+                        <form>
+                            <fieldset data-role="controlgroup" data-type="horizontal">
+                                <legend></legend>
+                                <input type="radio" name="radio-choice-h-2" id="thisday" value="on" checked="checked">
+                                <label for="thisday">Day</label>
+                                <input type="radio" name="radio-choice-h-2" id="weekly" value="off">
+                                <label for="weekly">Week</label>
+                                <input type="radio" name="radio-choice-h-2" id="monthly" value="other">
+                                <label for="monthly">Month</label>
+                                <input type="radio" name="radio-choice-h-2" id="yearly" value="other">
+                                <label for="yearly">Year</label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <div class="jqm-block-content">
+                    <h3>Now Playing</h3>
+                    <div id="linechart"></div>
+                </div>
+            </div>
+            <div class="ui-block-a">
+                <div class="jqm-block-content ui-responsive" >
+                    <h3>Where's it Going</h3>
+                    <div id="piechart"></div>
+                    <div id="ctrlgrp">
+                        <form>
+                            <fieldset data-role="controlgroup" data-type="horizontal">
+                                <legend></legend>
+                                <input type="radio" name="radio-choice-h-2" id="radio2a" value="on" checked="checked">
+                                <label for="radio2a">Line 1</label>
+                                <input type="radio" name="radio-choice-h-2" id="radio2b" value="off">
+                                <label for="radio2b">Line 2</label>
+                                <input type="radio" name="radio-choice-h-2" id="radio2c" value="other">
+                                <label for="radio2c">Line 3</label>
+                                <input type="radio" name="radio-choice-h-2" id="radio2d" value="other">
+                                <label for="radio2d">Line 4</label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ui-block-b">
+                <div class="jqm-block-content">
+                    <h3>What's On</h3>
+                    <div id="gaugechart"></div>
+                    <div id="realDisplay" data-position="center" align="center" style="font-size: large; font-weight: bold; color: #3eb249;"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /content -->
+
+    <div data-role="panel" data-position="left" data-display="overlay" id="left-panel" data-theme="c" class="jqm-navmenu-panel">
+        <ul data-theme="d" data-role="listview" class="jqm-list ui-alt-icon ui-nodisc-icon">
+            <li data-icon="home"><a href="#" data-rel="close">Dashboard</a></li>
+            <li data-icon="search"><a href="./energymon.html" data-ajax="false">Energy Monitor</a></li>
+            <li data-icon="power"><a href="./powercon.html" data-ajax="false">Power Control</a></li>
+            <li data-icon="lock"><a href="#" data-rel="close">Security</a></li>
+        </ul>
+    </div>
+
+</div><!-- /page -->
+<div id="chart1"></div>
+
+</body>
+</html>
